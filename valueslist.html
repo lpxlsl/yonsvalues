@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yon's Values</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0000;
+  color: #eee;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #5a0000, #140000);
+  border-bottom: 3px solid darkred;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff4b4b;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background: #120000;
+  border-bottom: 2px solid #400000;
+}
+
+nav button {
+  flex: 1;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav button:hover,
+nav button.active {
+  background: #2b0000;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #330000;
+}
+
+th {
+  background: #2b0000;
+  color: #ff6b6b;
+}
+
+tr:hover {
+  background: #1c0000;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #080000;
+  color: #aaa;
+  border-top: 2px solid darkred;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yon’s Values</h1>
+  <p>Tap Simulator</p>
+</header>
+
+<nav>
+  <button class="active" onclick="showTab('newyear')">New Year</button>
+  <button onclick="showTab('space')">Space Island</button>
+  <button onclick="showTab('leaderboard')">Leaderboard Pets</button>
+  <button onclick="showTab('robux')">Robux Egg</button>
+  <button onclick="showTab('christmas')">Christmas Egg</button>
+  <button onclick="showTab('special')">Special Pets</button>
+  <button onclick="showTab('atlantis')">Atlantis Island</button>
+  <button onclick="showTab('fiveM')">5M Egg</button>
+  <button onclick="showTab('candy')">Candy Island</button>
+</nav>
+
+<!-- NEW YEAR -->
+<div id="newyear" class="section active">
+<h2>🎆 New Year Egg</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>2026 Balloons (Normal)</td><td>STABLE</td><td>120</td></tr>
+<tr><td>2026 Balloons (Golden)</td><td>STABLE</td><td>490</td></tr>
+<tr><td>2026 Balloons (Rainbow)</td><td>STABLE</td><td>540</td></tr>
+<tr><td>2026 Overload (Normal)</td><td>RISING</td><td>1,350</td></tr>
+<tr><td>2026 Overload (Golden)</td><td>RISING</td><td>5,450</td></tr>
+<tr><td>2026 Overload (Rainbow)</td><td>RISING</td><td>5,800</td></tr>
+<tr><td>New Year Dragon (Normal)</td><td>RISING</td><td>500</td></tr>
+<tr><td>New Year Dragon (Golden)</td><td>RISING</td><td>2,000</td></tr>
+<tr><td>New Year Dragon (Rainbow)</td><td>RISING</td><td>2,200</td></tr>
+</table>
+</div>
+
+<!-- SPACE ISLAND -->
+<div id="space" class="section">
+<h2>🚀 Space Island</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>Luminary Star (Normal)</td><td>DROPPING</td><td>100</td></tr>
+<tr><td>Luminary Star (Golden)</td><td>DROPPING</td><td>390</td></tr>
+<tr><td>Luminary Star (Rainbow)</td><td>DROPPING</td><td>490</td></tr>
+<tr><td>Cosmic Chaos (Normal)</td><td>DROPPING</td><td>485</td></tr>
+<tr><td>Cosmic Chaos (Golden)</td><td>DROPPING</td><td>2,050</td></tr>
+<tr><td>Cosmic Chaos (Rainbow)</td><td>DROPPING</td><td>2,250</td></tr>
+</table>
+</div>
+
+<!-- LEADERBOARD PETS -->
+<div id="leaderboard" class="section">
+<h2>🏆 Leaderboard Pets</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>TOP 10 (Normal)</td><td>RISING</td><td>11,500</td></tr>
+<tr><td>TOP 10 (Golden)</td><td>STABLE</td><td>O/C</td></tr>
+<tr><td>TOP 10 (Rainbow)</td><td>STABLE</td><td>O/C</td></tr>
+<tr><td>TOP 100 (Normal)</td><td>RISING</td><td>1,250</td></tr>
+<tr><td>TOP 100 (Golden)</td><td>STABLE</td><td>4,000</td></tr>
+<tr><td>TOP 100 (Rainbow)</td><td>STABLE</td><td>4,800</td></tr>
+<tr><td>TOP 250 (Normal)</td><td>RISING</td><td>550</td></tr>
+<tr><td>TOP 250 (Golden)</td><td>STABLE</td><td>1,900</td></tr>
+<tr><td>TOP 250 (Rainbow)</td><td>STABLE</td><td>2,500</td></tr>
+<tr><td>Divine Celestia (Normal)</td><td>STABLE</td><td>12,000</td></tr>
+<tr><td>Silver Emperor (Normal)</td><td>STABLE</td><td>1,300</td></tr>
+<tr><td>Silver Emperor (Golden)</td><td>STABLE</td><td>4,200</td></tr>
+<tr><td>Silver Emperor (Rainbow)</td><td>STABLE</td><td>5,050</td></tr>
+<tr><td>Trophy Guardian (Normal)</td><td>STABLE</td><td>600</td></tr>
+<tr><td>Trophy Guardian (Golden)</td><td>STABLE</td><td>2,000</td></tr>
+<tr><td>Trophy Guardian (Rainbow)</td><td>STABLE</td><td>2,600</td></tr>
+</table>
+</div>
+
+<!-- ROBUX EGG -->
+<div id="robux" class="section">
+<h2>💎 Robux Egg</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>Snow Thief (Normal)</td><td>DROPPING</td><td>45</td></tr>
+<tr><td>Snow Thief (Golden)</td><td>DROPPING</td><td>150</td></tr>
+<tr><td>Snow Thief (Rainbow)</td><td>DROPPING</td><td>200</td></tr>
+<tr><td>Evil Snowman (Normal)</td><td>STABLE</td><td>60</td></tr>
+<tr><td>Evil Snowman (Golden)</td><td>STABLE</td><td>210</td></tr>
+<tr><td>Evil Snowman (Rainbow)</td><td>STABLE</td><td>290</td></tr>
+<tr><td>Gift Mimic (Normal)</td><td>DROPPING</td><td>40</td></tr>
+<tr><td>Gift Mimic (Golden)</td><td>DROPPING</td><td>120</td></tr>
+<tr><td>Gift Mimic (Rainbow)</td><td>DROPPING</td><td>170</td></tr>
+<tr><td>Christmas Goat (Normal)</td><td>DROPPING</td><td>30</td></tr>
+<tr><td>Christmas Goat (Golden)</td><td>DROPPING</td><td>110</td></tr>
+<tr><td>Christmas Goat (Rainbow)</td><td>DROPPING</td><td>155</td></tr>
+<tr><td>Krampus (Normal)</td><td>RISING</td><td>2,200</td></tr>
+<tr><td>Krampus (Golden)</td><td>RISING</td><td>8,200</td></tr>
+<tr><td>Krampus (Rainbow)</td><td>RISING</td><td>10,000+</td></tr>
+</table>
+</div>
+
+<!-- CHRISTMAS EGG -->
+<div id="christmas" class="section">
+<h2>🎄 Christmas Egg</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>Frost Spirit (Normal)</td><td>STABLE</td><td>45</td></tr>
+<tr><td>Frost Spirit (Golden)</td><td>STABLE</td><td>155</td></tr>
+<tr><td>Frost Spirit (Rainbow)</td><td>STABLE</td><td>220</td></tr>
+<tr><td>Gilded Seraphim (Normal)</td><td>RISING</td><td>950</td></tr>
+<tr><td>Gilded Seraphim (Golden)</td><td>RISING</td><td>3,700</td></tr>
+<tr><td>Gilded Seraphim (Rainbow)</td><td>RISING</td><td>4,200</td></tr>
+<tr><td>Christmas Tree (Normal)</td><td>STABLE</td><td>110</td></tr>
+<tr><td>Christmas Tree (Golden)</td><td>STABLE</td><td>430</td></tr>
+<tr><td>Christmas Tree (Rainbow)</td><td>STABLE</td><td>500</td></tr>
+</table>
+</div>
+
+<!-- SPECIAL PETS -->
+<div id="special" class="section">
+<h2>✨ Special Pets</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>2026 Star (Normal)</td><td>RISING</td><td>1,100</td></tr>
+<tr><td>2026 Star (Golden)</td><td>RISING</td><td>4,100</td></tr>
+<tr><td>2026 Star (Rainbow)</td><td>RISING</td><td>4,550</td></tr>
+<tr><td>Disco Lord (Normal)</td><td>STABLE</td><td>1,250</td></tr>
+<tr><td>Disco Lord (Golden)</td><td>STABLE</td><td>4,000+</td></tr>
+<tr><td>Disco Lord (Rainbow)</td><td>STABLE</td><td>5,000+</td></tr>
+<tr><td>Hooded Krampus (Normal)</td><td>STABLE</td><td>460</td></tr>
+<tr><td>Hooded Krampus (Golden)</td><td>STABLE</td><td>1,600</td></tr>
+<tr><td>Hooded Krampus (Rainbow)</td><td>STABLE</td><td>2,000</td></tr>
+<tr><td>Celestial Candycane (Normal)</td><td>STABLE</td><td>900</td></tr>
+<tr><td>Celestial Candycane (Golden)</td><td>STABLE</td><td>3,100</td></tr>
+<tr><td>Celestial Candycane (Rainbow)</td><td>STABLE</td><td>4,000</td></tr>
+</table>
+</div>
+
+<!-- ATLANTIS -->
+<div id="atlantis" class="section">
+<h2>🌊 Atlantis Island</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>Orca Dominator (Normal)</td><td>DROPPING</td><td>40</td></tr>
+<tr><td>Orca Dominator (Golden)</td><td>DROPPING</td><td>140</td></tr>
+<tr><td>Orca Dominator (Rainbow)</td><td>DROPPING</td><td>190</td></tr>
+<tr><td>King Kraken (Normal)</td><td>DROPPING</td><td>150</td></tr>
+<tr><td>King Kraken (Golden)</td><td>DROPPING</td><td>600</td></tr>
+<tr><td>King Kraken (Rainbow)</td><td>DROPPING</td><td>730</td></tr>
+</table>
+</div>
+
+<!-- 5M EGG -->
+<div id="fiveM" class="section">
+<h2>💰 5M Egg</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>5M Frost Monarch (Normal)</td><td>STABLE</td><td>1,200</td></tr>
+<tr><td>5M Frost Monarch (Golden)</td><td>STABLE</td><td>4,500</td></tr>
+<tr><td>5M Frost Monarch (Rainbow)</td><td>STABLE</td><td>5,400</td></tr>
+<tr><td>5M North Star (Normal)</td><td>STABLE</td><td>250</td></tr>
+<tr><td>5M North Star (Golden)</td><td>STABLE</td><td>800</td></tr>
+<tr><td>5M North Star (Rainbow)</td><td>STABLE</td><td>1,100</td></tr>
+<tr><td>Frosty Snowman (Normal)</td><td>STABLE</td><td>100</td></tr>
+<tr><td>Frosty Snowman (Golden)</td><td>STABLE</td><td>380</td></tr>
+<tr><td>Frosty Snowman (Rainbow)</td><td>STABLE</td><td>440</td></tr>
+</table>
+</div>
+
+<!-- CANDY ISLAND -->
+<div id="candy" class="section">
+<h2>🍬 Candy Island</h2>
+<table>
+<tr><th>Pet</th><th>Status</th><th>Value</th></tr>
+<tr><td>Candy God (Normal)</td><td>DROPPING</td><td>40</td></tr>
+<tr><td>Candy God (Golden)</td><td>DROPPING</td><td>140</td></tr>
+<tr><td>Candy God (Rainbow)</td><td>DROPPING</td><td>180</td></tr>
+<tr><td>Chocolate Marauder (Normal)</td><td>DROPPING</td><td>70</td></tr>
+<tr><td>Chocolate Marauder (Golden)</td><td>DROPPING</td><td>230</td></tr>
+<tr><td>Chocolate Marauder (Rainbow)</td><td>DROPPING</td><td>300</td></tr>
+</table>
+</div>
+
+<footer>
+Made by: yon DISCORD: @thesaintyon
+</footer>
+
+<script>
+function showTab(tabId) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
